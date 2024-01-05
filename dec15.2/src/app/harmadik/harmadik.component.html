@@ -1,0 +1,31 @@
+<!-- FoglalasRegisztracioComponent.html -->
+
+<form [formGroup]="foglalasForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="cim">Cím:</label>
+      <input type="text" id="cim" formControlName="cim" class="form-control" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="datum">Dátum:</label>
+      <input type="date" id="datum" formControlName="datum" class="form-control" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="fo">Résztvevők száma:</label>
+      <input type="number" id="fo" formControlName="fo" class="form-control" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="iranyitoszam">Irányítószám:</label>
+      <input type="text" id="iranyitoszam" formControlName="iranyitoszam" class="form-control" required pattern="\d{4}">
+    </div>
+  
+    <div class="form-group">
+      <label for="nev">Név:</label>
+      <input type="text" id="nev" formControlName="nev" class="form-control" required>
+    </div>
+  
+    <button type="submit" class="btn btn-primary">Regisztráció</button>
+  </form>
+  
